@@ -7,6 +7,8 @@
 
 import UIKit
 import SnapKit
+import RxSwift
+import RxCocoa
 
 class NicknameViewController: UIViewController {
    
@@ -19,9 +21,36 @@ class NicknameViewController: UIViewController {
         view.backgroundColor = Color.white
         
         configureLayout()
-       
+        
+        bind()
         nextButton.addTarget(self, action: #selector(nextButtonClicked), for: .touchUpInside)
 
+    }
+    
+    let disposeBag = DisposeBag()
+    
+    let viewModel = NicknameViewModel()
+    
+    func bind() {
+        
+        viewModel.nicknameText
+            .bind(to: nicknameTextField.rx.text)
+            .disposed(by: disposeBag)
+        
+        nicknameTextField.rx.text.orEmpty
+            .subscribe(with: viewModel) { owner, value in
+                owner.nicknameText.onNext(value)
+            }
+            .disposed(by: disposeBag)
+        
+        viewModel.buttonEnabled
+            .bind(to: nextButton.rx.isEnabled)
+            .disposed(by: disposeBag)
+        
+        viewModel.buttonColor
+            .bind(to: nextButton.rx.backgroundColor, nicknameTextField.rx.tintColor)
+            .disposed(by: disposeBag)
+        
     }
     
     @objc func nextButtonClicked() {
