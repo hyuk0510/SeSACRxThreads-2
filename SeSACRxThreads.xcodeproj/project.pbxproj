@@ -32,6 +32,14 @@
 		D812DDB52AF4E0AF000F89AB /* BirthdayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812DDB42AF4E0AF000F89AB /* BirthdayViewModel.swift */; };
 		D812DDBC2AF8E542000F89AB /* PhoneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812DDBB2AF8E542000F89AB /* PhoneViewModel.swift */; };
 		D812DDC22AFA4625000F89AB /* NicknameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812DDC12AFA4625000F89AB /* NicknameViewModel.swift */; };
+		D812DDC52AFA4CE2000F89AB /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812DDC42AFA4CE2000F89AB /* NumbersViewController.swift */; };
+		D812DDC72AFA4FDA000F89AB /* SimpleTableViewExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812DDC62AFA4FDA000F89AB /* SimpleTableViewExampleViewController.swift */; };
+		D812DDC92AFA526F000F89AB /* NumbersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812DDC82AFA526F000F89AB /* NumbersViewModel.swift */; };
+		D812DDCB2AFA527D000F89AB /* SimpleTableViewExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812DDCA2AFA527D000F89AB /* SimpleTableViewExampleViewModel.swift */; };
+		D812DDCD2AFA584E000F89AB /* SimpleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812DDCC2AFA584E000F89AB /* SimpleTableViewCell.swift */; };
+		D812DDD82AFB8C37000F89AB /* SimpleValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812DDD72AFB8C37000F89AB /* SimpleValidationViewController.swift */; };
+		D812DDDA2AFB944D000F89AB /* SimpleValidationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812DDD92AFB944D000F89AB /* SimpleValidationViewModel.swift */; };
+		D812DDDC2AFB94C1000F89AB /* SimplePickerViewExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812DDDB2AFB94C1000F89AB /* SimplePickerViewExampleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +86,14 @@
 		D812DDB42AF4E0AF000F89AB /* BirthdayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayViewModel.swift; sourceTree = "<group>"; };
 		D812DDBB2AF8E542000F89AB /* PhoneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViewModel.swift; sourceTree = "<group>"; };
 		D812DDC12AFA4625000F89AB /* NicknameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameViewModel.swift; sourceTree = "<group>"; };
+		D812DDC42AFA4CE2000F89AB /* NumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
+		D812DDC62AFA4FDA000F89AB /* SimpleTableViewExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewExampleViewController.swift; sourceTree = "<group>"; };
+		D812DDC82AFA526F000F89AB /* NumbersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewModel.swift; sourceTree = "<group>"; };
+		D812DDCA2AFA527D000F89AB /* SimpleTableViewExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewExampleViewModel.swift; sourceTree = "<group>"; };
+		D812DDCC2AFA584E000F89AB /* SimpleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewCell.swift; sourceTree = "<group>"; };
+		D812DDD72AFB8C37000F89AB /* SimpleValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleValidationViewController.swift; sourceTree = "<group>"; };
+		D812DDD92AFB944D000F89AB /* SimpleValidationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleValidationViewModel.swift; sourceTree = "<group>"; };
+		D812DDDB2AFB94C1000F89AB /* SimplePickerViewExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePickerViewExampleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +147,7 @@
 		041280222AEF9BAB00972552 /* SeSACRxThreads */ = {
 			isa = PBXGroup;
 			children = (
+				D812DDC32AFA4CD5000F89AB /* Sample */,
 				041280532AEF9C1F00972552 /* SignUp */,
 				041280542AEF9C2600972552 /* SignIn */,
 				0412806D2AEFAD0F00972552 /* SignUpOptional */,
@@ -202,6 +219,21 @@
 				D812DDBB2AF8E542000F89AB /* PhoneViewModel.swift */,
 			);
 			path = SignUpOptional;
+			sourceTree = "<group>";
+		};
+		D812DDC32AFA4CD5000F89AB /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				D812DDC42AFA4CE2000F89AB /* NumbersViewController.swift */,
+				D812DDC82AFA526F000F89AB /* NumbersViewModel.swift */,
+				D812DDC62AFA4FDA000F89AB /* SimpleTableViewExampleViewController.swift */,
+				D812DDCA2AFA527D000F89AB /* SimpleTableViewExampleViewModel.swift */,
+				D812DDCC2AFA584E000F89AB /* SimpleTableViewCell.swift */,
+				D812DDD72AFB8C37000F89AB /* SimpleValidationViewController.swift */,
+				D812DDD92AFB944D000F89AB /* SimpleValidationViewModel.swift */,
+				D812DDDB2AFB94C1000F89AB /* SimplePickerViewExampleViewController.swift */,
+			);
+			path = Sample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,21 +376,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				041280782AF1D14000972552 /* Resource.swift in Sources */,
+				D812DDC92AFA526F000F89AB /* NumbersViewModel.swift in Sources */,
 				0412806F2AEFAD2D00972552 /* BirthdayViewController.swift in Sources */,
+				D812DDDA2AFB944D000F89AB /* SimpleValidationViewModel.swift in Sources */,
+				D812DDCD2AFA584E000F89AB /* SimpleTableViewCell.swift in Sources */,
 				041280652AEFA2F000972552 /* SignTextField.swift in Sources */,
 				0412806C2AEFABFE00972552 /* PasswordViewController.swift in Sources */,
 				041280562AEFA04800972552 /* SignInViewController.swift in Sources */,
 				D812DDBC2AF8E542000F89AB /* PhoneViewModel.swift in Sources */,
+				D812DDCB2AFA527D000F89AB /* SimpleTableViewExampleViewModel.swift in Sources */,
 				041280282AEF9BAB00972552 /* ViewController.swift in Sources */,
 				041280632AEFA0CE00972552 /* PointButton.swift in Sources */,
 				041280242AEF9BAB00972552 /* AppDelegate.swift in Sources */,
+				D812DDC52AFA4CE2000F89AB /* NumbersViewController.swift in Sources */,
 				D812DDAE2AF3C8A1000F89AB /* String+Extension.swift in Sources */,
 				D812DDB52AF4E0AF000F89AB /* BirthdayViewModel.swift in Sources */,
+				D812DDC72AFA4FDA000F89AB /* SimpleTableViewExampleViewController.swift in Sources */,
 				041280732AEFAD4B00972552 /* NicknameViewController.swift in Sources */,
 				D812DDC22AFA4625000F89AB /* NicknameViewModel.swift in Sources */,
 				0412806A2AEFA91E00972552 /* SignUpViewController.swift in Sources */,
 				041280712AEFAD3D00972552 /* PhoneViewController.swift in Sources */,
 				041280262AEF9BAB00972552 /* SceneDelegate.swift in Sources */,
+				D812DDDC2AFB94C1000F89AB /* SimplePickerViewExampleViewController.swift in Sources */,
+				D812DDD82AFB8C37000F89AB /* SimpleValidationViewController.swift in Sources */,
 				041280582AEFA05300972552 /* SignInViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
