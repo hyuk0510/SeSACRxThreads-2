@@ -40,6 +40,12 @@
 		D812DDD82AFB8C37000F89AB /* SimpleValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812DDD72AFB8C37000F89AB /* SimpleValidationViewController.swift */; };
 		D812DDDA2AFB944D000F89AB /* SimpleValidationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812DDD92AFB944D000F89AB /* SimpleValidationViewModel.swift */; };
 		D812DDDC2AFB94C1000F89AB /* SimplePickerViewExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812DDDB2AFB94C1000F89AB /* SimplePickerViewExampleViewController.swift */; };
+		D812DDDF2AFBE24F000F89AB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812DDDE2AFBE24F000F89AB /* SearchViewController.swift */; };
+		D812DDE12AFBE28E000F89AB /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812DDE02AFBE28E000F89AB /* SampleViewController.swift */; };
+		D812DDE32AFBE2B8000F89AB /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812DDE22AFBE2B8000F89AB /* SearchTableViewCell.swift */; };
+		D812DDE62AFBE35A000F89AB /* SearchAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812DDE52AFBE35A000F89AB /* SearchAppModel.swift */; };
+		D812DDE82AFBE387000F89AB /* BasicAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812DDE72AFBE387000F89AB /* BasicAPIManager.swift */; };
+		D812DDEB2AFBE86D000F89AB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D812DDEA2AFBE86D000F89AB /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +100,11 @@
 		D812DDD72AFB8C37000F89AB /* SimpleValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleValidationViewController.swift; sourceTree = "<group>"; };
 		D812DDD92AFB944D000F89AB /* SimpleValidationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleValidationViewModel.swift; sourceTree = "<group>"; };
 		D812DDDB2AFB94C1000F89AB /* SimplePickerViewExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePickerViewExampleViewController.swift; sourceTree = "<group>"; };
+		D812DDDE2AFBE24F000F89AB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D812DDE02AFBE28E000F89AB /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
+		D812DDE22AFBE2B8000F89AB /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		D812DDE52AFBE35A000F89AB /* SearchAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAppModel.swift; sourceTree = "<group>"; };
+		D812DDE72AFBE387000F89AB /* BasicAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAPIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D812DDEB2AFBE86D000F89AB /* Kingfisher in Frameworks */,
 				041280602AEFA0AC00972552 /* SnapKit in Frameworks */,
 				0412805D2AEFA09E00972552 /* RxSwift in Frameworks */,
 				0412805B2AEFA09E00972552 /* RxCocoa in Frameworks */,
@@ -147,6 +159,7 @@
 		041280222AEF9BAB00972552 /* SeSACRxThreads */ = {
 			isa = PBXGroup;
 			children = (
+				D812DDDD2AFBE22C000F89AB /* Search */,
 				D812DDC32AFA4CD5000F89AB /* Sample */,
 				041280532AEF9C1F00972552 /* SignUp */,
 				041280542AEF9C2600972552 /* SignIn */,
@@ -236,6 +249,26 @@
 			path = Sample;
 			sourceTree = "<group>";
 		};
+		D812DDDD2AFBE22C000F89AB /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				D812DDE42AFBE349000F89AB /* Network */,
+				D812DDDE2AFBE24F000F89AB /* SearchViewController.swift */,
+				D812DDE02AFBE28E000F89AB /* SampleViewController.swift */,
+				D812DDE22AFBE2B8000F89AB /* SearchTableViewCell.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		D812DDE42AFBE349000F89AB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D812DDE52AFBE35A000F89AB /* SearchAppModel.swift */,
+				D812DDE72AFBE387000F89AB /* BasicAPIManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -256,6 +289,7 @@
 				0412805A2AEFA09E00972552 /* RxCocoa */,
 				0412805C2AEFA09E00972552 /* RxSwift */,
 				0412805F2AEFA0AC00972552 /* SnapKit */,
+				D812DDEA2AFBE86D000F89AB /* Kingfisher */,
 			);
 			productName = SeSACRxThreads;
 			productReference = 041280202AEF9BAB00972552 /* SeSACRxThreads.app */;
@@ -332,6 +366,7 @@
 			packageReferences = (
 				041280592AEFA09D00972552 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				0412805E2AEFA0AC00972552 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				D812DDE92AFBE86D000F89AB /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 041280212AEF9BAB00972552 /* Products */;
 			projectDirPath = "";
@@ -383,14 +418,18 @@
 				041280652AEFA2F000972552 /* SignTextField.swift in Sources */,
 				0412806C2AEFABFE00972552 /* PasswordViewController.swift in Sources */,
 				041280562AEFA04800972552 /* SignInViewController.swift in Sources */,
+				D812DDDF2AFBE24F000F89AB /* SearchViewController.swift in Sources */,
 				D812DDBC2AF8E542000F89AB /* PhoneViewModel.swift in Sources */,
 				D812DDCB2AFA527D000F89AB /* SimpleTableViewExampleViewModel.swift in Sources */,
 				041280282AEF9BAB00972552 /* ViewController.swift in Sources */,
 				041280632AEFA0CE00972552 /* PointButton.swift in Sources */,
+				D812DDE32AFBE2B8000F89AB /* SearchTableViewCell.swift in Sources */,
 				041280242AEF9BAB00972552 /* AppDelegate.swift in Sources */,
 				D812DDC52AFA4CE2000F89AB /* NumbersViewController.swift in Sources */,
 				D812DDAE2AF3C8A1000F89AB /* String+Extension.swift in Sources */,
 				D812DDB52AF4E0AF000F89AB /* BirthdayViewModel.swift in Sources */,
+				D812DDE12AFBE28E000F89AB /* SampleViewController.swift in Sources */,
+				D812DDE82AFBE387000F89AB /* BasicAPIManager.swift in Sources */,
 				D812DDC72AFA4FDA000F89AB /* SimpleTableViewExampleViewController.swift in Sources */,
 				041280732AEFAD4B00972552 /* NicknameViewController.swift in Sources */,
 				D812DDC22AFA4625000F89AB /* NicknameViewModel.swift in Sources */,
@@ -398,6 +437,7 @@
 				041280712AEFAD3D00972552 /* PhoneViewController.swift in Sources */,
 				041280262AEF9BAB00972552 /* SceneDelegate.swift in Sources */,
 				D812DDDC2AFB94C1000F89AB /* SimplePickerViewExampleViewController.swift in Sources */,
+				D812DDE62AFBE35A000F89AB /* SearchAppModel.swift in Sources */,
 				D812DDD82AFB8C37000F89AB /* SimpleValidationViewController.swift in Sources */,
 				041280582AEFA05300972552 /* SignInViewModel.swift in Sources */,
 			);
@@ -758,6 +798,14 @@
 				minimumVersion = 5.6.0;
 			};
 		};
+		D812DDE92AFBE86D000F89AB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -775,6 +823,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0412805E2AEFA0AC00972552 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		D812DDEA2AFBE86D000F89AB /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D812DDE92AFBE86D000F89AB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
